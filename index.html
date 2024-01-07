@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emile Vekemans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Emile Vekemans</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">About</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <!-- <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Emile Vekemans</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/about pic.jpg" alt="Emile Vekemans profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, my name is</p>
+            <h1 class="title">Emile Vekemans</h1>
+            <p class="section__text__p2">Business Engineer</p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2" 
+            onclick="window.open('/assets/CV. Emile Vekemans - 2024.pdf')"
+            >
+             Resume
+            </button>
+            <button 
+            class="btn btn-color-1" 
+            onclick="location.href='./#contact'">
+            Contact Info
+            </button>
+        </div> 
+        <div id="socials-container">
+            <img 
+            src="./assets/linkedin.png" 
+            alt="My Linkedin profile" 
+            class="icon-linkedin" 
+            onclick="location.href='https://www.linkedin.com/in/emile-vekemans-265483222/'">
+            <!-- <img 
+            src="./assets/github.png" 
+            alt="My Github profile" 
+            class="icon-github" 
+            onclick="location.href='https://github.com/emilevekemans'"> -->
+        </div>
+        </div>
+    </section>
+    <p class="description"></p>
+    
+    <!-- <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <p class="section__text__p3">Blablabla</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about pic.jpg" 
+                alt="profile picture"
+                class="about-pic"
+                >
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                        src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon"
+                        >
+                        <h3>Education</h3>
+                        <ul>
+                            <li class="education-list">BSc Business Engineering <a class="UCLouvain" href="./assets/@uclouvain.pdf">@UCLouvain</a></li>
+                            <li class="education-list">MSc Business Engineering <a class="Solvay" href="./assets/@Solvay.pdf">@Solvay</a></li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <h3>Passionate about</h3>
+                        <p>Technology, Finance & Entrepreunership <br />Business data analytics <br />Travelling</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Freshly back from a bagpacking trip in Central America, I am Young graduate in Business Engineering. Passionate about Technology, Finance and Entrepreunership. </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        > 
+    </section> -->
+    <!-- <section id="experience"> 
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Market Research and Analysis</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Competitor Analysis</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Market Segmentation</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Data Visualization</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Market Forecasting</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Trend Analysis</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Industry and Regulatory Research</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Project Management</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Project Planning and Scheduling</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Budgeting and Cost Control</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Critical Path Analysis</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Team Leadership</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Conflict Resolution</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        >
+    </section> -->
+    <!-- <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/freight_consolidation_image.jpg"
+                        alt="Freight Consolidation Operations Management Project"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Freight Consolidation: Operations Management Project</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('/assets/freight-consolidation-project.pdf')">
+                            PDF
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('/assets/freight-consolidation-project.pdf')">
+                            Live demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/freight_consolidation_image.jpg"
+                        alt="Freight Consolidation Operations Management Project"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Freight Consolidation: Operations Management Project</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('/assets/freight-consolidation-project.pdf')">
+                            PDF
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('/assets/freight-consolidation-project.pdf')">
+                            Live demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/freight_consolidation_image.jpg"
+                        alt="Freight Consolidation Operations Management Project"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Freight Consolidation: Operations Management Project</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('/assets/freight-consolidation-project.pdf')">
+                            PDF
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('/assets/freight-consolidation-project.pdf')">
+                            Live demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <img 
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+    />    
+    </section> -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="mailto:emilevekemans@hotmail.be">
+                    <img
+                    src="./assets/email.png"
+                    alt="email icon"
+                    class="icon-email"
+                    />
+                </a>
+                <p>emilevekemans@hotmail.be</p>
+            </div>
+            <div class="contact-info-container">
+                <a href="https://www.linkedin.com/in/emile-vekemans-265483222/">
+                    <img
+                    src="./assets/linkedin.png"
+                    alt="email icon"
+                    class="icon-linkedin"
+                    />
+                </a>
+                <p>&nbsp;LinkedIn</p>
+            </div>
+            <div class="contact-info-container">
+                <a href="tel:+32479641307">
+                    <img
+                    src="./assets/phone.png"
+                    alt="email icon"
+                    class="icon-phone"
+                    />
+                </a>
+                <p>&nbsp;+32 479 64 13 07</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">About</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <!-- <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Emile Vekemans. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
